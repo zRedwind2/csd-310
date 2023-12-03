@@ -36,7 +36,7 @@ try:
  film = cursor.fetchall()
  print("\n-- DISPLAYING Director RECORDS in Order --")
  for film in film:
-  print("Film ID:{}\nRuntime: {}\n".format(film[0], film[1]))
+  print("Film Name:{}\nDirector: {}\n".format(film[0], film[1]))
 
 
 except mysql.connector.Error as err:
